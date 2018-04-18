@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+  "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">  
+<tiles-definitions>  
+
+ 
+   <!-- Base Definition -->
+   <definition name="base-definition-home" 
+       template="/jsppages/template/homepage/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="menu" value="/jsppages/template/homepage/defaultMenu.jsp" />  
+       
+       <put-attribute name="header" value="/jsppages/template/homepage/defaultHeader.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="bfooter" value="/jsppages/template/homepage/defaultFooter.jsp" />  
+       
+   </definition>  
+   
+      <definition name="definition-internalPage" 
+       template="/jsppages/template/internalpages/layout/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/jsppages/template/internalpages/defaultHeader.jsp" />  
+       <put-attribute name="banner" value="/jsppages/template/internalpages/banner.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="bfooter" value="/jsppages/template/internalpages/defaultFooter.jsp" />  
+       
+   </definition>  
+ 
+   <!-- Home Page -->
+   <definition name="home" extends="base-definition-home">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/home.jsp" />  
+   </definition>  
+   
+     <!-- About Us Pages  -->
+   <definition name="aboutUsCHPage" extends="definition-internalPage">  
+       <put-attribute name="title" value="About Us" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/aboutUs_Chandigarh.jsp" />  
+   </definition>
+   <definition name="aboutUsCHPage" extends="definition-internalPage">  
+       <put-attribute name="title" value="About Us" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/aboutUs_Bihar.jsp" />  
+   </definition>     
+    <definition name="aboutUsANPage" extends="definition-internalPage">  
+       <put-attribute name="title" value="About Us" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/aboutUs_Andmaan.jsp" />  
+   </definition>  
+    <definition name="aboutUsDDPage" extends="definition-internalPage">  
+       <put-attribute name="title" value="About Us" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/aboutUs_DamanDiu.jsp" />  
+   </definition>  
+    <definition name="aboutUsDNPage" extends="definition-internalPage">  
+       <put-attribute name="title" value="About Us" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/aboutUs_DadraNagar.jsp" />  
+   </definition>  
+    <definition name="aboutUsLKPage" extends="definition-internalPage">  
+       <put-attribute name="title" value="About Us" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/aboutUs_Lakshadweep.jsp" />  
+   </definition>  
+   
+   
+   
+   
+   
+     <!-- FAQ Pages -->
+   <definition name="faqPage" extends="definition-internalPage">  
+       <put-attribute name="title" value="FAQ" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/faq.jsp" />  
+   </definition>
+      <definition name="faqPage1" extends="definition-internalPage">  
+       <put-attribute name="title" value="FAQ" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/faq_1.jsp" />  
+   </definition> 
+      <definition name="faqPage2" extends="definition-internalPage">  
+       <put-attribute name="title" value="FAQ" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/faq_2.jsp" />  
+   </definition> 
+   
+   
+   
+    
+   
+        <!-- Login Page -->
+   <definition name="loginPage" extends="definition-internalPage">  
+       <put-attribute name="title" value="Agent/Builder Login Page" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/login.jsp" />  
+   </definition> 
+   
+    <definition name="forgetPasswordUserForm" extends="definition-internalPage">  
+       <put-attribute name="title" value="Forget Password" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/forgetPasswordForm.jsp" />  
+   </definition> 
+   
+     <definition name="authorityLoginPage" extends="definition-internalPage">  
+       <put-attribute name="title" value="Authority Login Page" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/authorityloginPage.jsp" />  
+   </definition> 
+   
+   
+      <!-- RTI Page -->
+    <definition name="rtiPage" extends="definition-internalPage">  
+       <put-attribute name="title" value="RTI" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/rtiPage.jsp" />  
+   </definition>  
+   
+     <!-- Contact US Page -->
+    <definition name="contactUsPage" extends="definition-internalPage">  
+       <put-attribute name="title" value="Contact Us" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/contactUs.jsp" />  
+   </definition> 
+   
+     <!-- Functions and Services Page -->
+    <definition name="functionsAndServicesPage" extends="definition-internalPage">  
+       <put-attribute name="title" value="Functions And Services" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/functionAndServices.jsp" />  
+   </definition> 
+   
+   
+       <!-- Defaulter Paroject List Page -->
+    <definition name="defaulterProjectList" extends="definition-internalPage">  
+       <!-- <put-attribute name="title" value="Search Page" /> -->  
+       <put-attribute name="title" value="Defaulter Project List" /> 
+       <put-attribute name="body" value="/jsppages/transaction/home/defaulterProjectListPage.jsp" />  
+   </definition>  
+   
+       <!-- Defaulter Agent List Page -->
+    <definition name="defaulterAgentList" extends="definition-internalPage">  
+       <!-- <put-attribute name="title" value="Search Page" /> -->  
+       <put-attribute name="title" value="Defaulter Agent List" /> 
+       <put-attribute name="body" value="/jsppages/transaction/home/defaulterAgentListPage.jsp" />  
+   </definition>  
+   
+   
+      <!-- Search Page -->
+    <definition name="resultPage" extends="definition-internalPage">  
+       <put-attribute name="title" value="Search Page" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/searchResultListPage.jsp" />  
+   </definition>  
+   
+   
+   
+      <!-- Search Page -->
+    <definition name="home.individualProjectDetails" extends="definition-internalPage">  
+       <put-attribute name="title" value="Project Detail Page" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/searchIndiProj.jsp" />  
+   </definition>  
+   
+      <!-- Search Page -->
+    <definition name="home.compProjectDetails" extends="definition-internalPage">  
+       <put-attribute name="title" value="Project Detail Page" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/searchFirmProj.jsp" />  
+   </definition>  
+   
+      <!-- Search Page -->
+    <definition name="home.individualAgentDetails" extends="definition-internalPage">  
+       <put-attribute name="title" value="Agent Detail Page" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/searchIndAgent.jsp" />  
+   </definition>  
+   
+      <!-- Search Page -->
+    <definition name="home.compAgentDetails" extends="definition-internalPage">  
+       <put-attribute name="title" value="Agent Detail Page" />  
+       <put-attribute name="body" value="/jsppages/transaction/home/searchFirmAgent.jsp" />  
+   </definition>  
+ 
+</tiles-definitions>

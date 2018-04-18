@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+  "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">  
+
+<tiles-definitions>  
+ 
+   <!-- Base Definition for Admin users-->
+   <definition name="admin-definition" 
+       template="/jsppages/transaction/admin/template/adminLayout.jsp">  
+       <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/jsppages/transaction/admin/template/adminHeader.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="bfooter" value="/jsppages/transaction/admin/template/adminFooter.jsp" />  
+       
+   </definition>  
+   
+    <!-- Base Definition for Authority Users -->
+     <definition name="authority-definition" 
+       template="/jsppages/transaction/admin/template/adminLayout.jsp">  
+       <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/jsppages/transaction/authority/template/authorityHeader.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="bfooter" value="/jsppages/transaction/admin/template/adminFooter.jsp" />  
+       
+   </definition>  
+   
+    <!-- Base Definition for Operator Users -->
+     <definition name="operator-definition" 
+       template="/jsppages/transaction/admin/template/adminLayout.jsp">  
+       <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/jsppages/transaction/operator/template/operatorHeader.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="bfooter" value="/jsppages/transaction/admin/template/adminFooter.jsp" />  
+       
+   </definition> 
+    
+ 
+   
+   
+   <!-- Complaint task list -->
+   
+     <!-- Project task List Page -->
+   <definition name="authority.complaintTasklist" extends="authority-definition">  
+       <put-attribute name="title" value="Complaint Task list" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/complainttaskList.jsp" />  
+   </definition>
+     
+   <definition name="authority.approvComplaint" extends="authority-definition">  
+       <put-attribute name="title" value="Complaint Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/approveComplaint.jsp" />  
+   </definition>
+   
+    <!-- Authority User Pages Start -->
+  
+    <!-- Dashboard Page -->
+   <definition name="authority.dashbord" extends="authority-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/authorityBody.jsp" />  
+   </definition> 
+  
+   
+    <definition name="authority.changePassword" extends="authority-definition">  
+       <put-attribute name="title" value="Change Password Form" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/changePassword.jsp" />  
+   </definition>
+   
+   
+    <!-- Project task List Page -->
+   <definition name="authority.projectTasklist" extends="authority-definition">  
+       <put-attribute name="title" value="Project Task List" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/projecttaskList.jsp" />  
+   </definition>  
+   
+     <!-- Project Details Page For Approval  authority.projectIndvDetails -->
+   <definition name="authority.projectCompDetails" extends="authority-definition">  
+       <put-attribute name="title" value="Project Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/approveProjectFirmRegistration.jsp" />  
+   </definition>  
+     <!-- Project Details Page For Approval   -->
+   <definition name="authority.projectIndvDetails" extends="authority-definition">  
+       <put-attribute name="title" value="Project Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/approveProjectRegistration.jsp" />  
+   </definition> 
+   
+   
+   
+   
+   
+     <!-- Agent task List Page -->
+   <definition name="authority.agentTasklist" extends="authority-definition">  
+       <put-attribute name="title" value="Agent Task List" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/agentRegtaskList.jsp" />  
+   </definition> 
+  
+  
+   <!-- Individual Agent Apporval Page -->
+   <definition name="authority.agentIndvDetails" extends="authority-definition">  
+       <put-attribute name="title" value="Agent Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/approveAgentRegistration.jsp" />  
+   </definition> 
+  
+   <!-- Company/Firm Agent Approval Page -->
+   <definition name="authority.agentCompDetails" extends="authority-definition">  
+       <put-attribute name="title" value="Agent Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/approveAgentDetailCom.jsp" />  
+   </definition> 
+  
+  
+  
+  
+  
+  
+    <definition name="authority.allAgentlist" extends="authority-definition">  
+       <put-attribute name="title" value="Agent List" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/allAgentRegList.jsp" />  
+   </definition> 
+  
+     <!-- Individual Agent Apporval Page -->
+   <definition name="authority.agentIndvDetailsPage" extends="authority-definition">  
+       <put-attribute name="title" value="Agent Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/agentRegistrationIndv.jsp" />  
+   </definition> 
+  
+   <!-- Company/Firm Agent Approval Page -->
+   <definition name="authority.agentCompDetailsPage" extends="authority-definition">  
+       <put-attribute name="title" value="Agent Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/agentRegDetailCom.jsp" />  
+   </definition>  
+  
+   <definition name="authority.allProjectlist" extends="authority-definition">  
+       <put-attribute name="title" value="Project List" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/allProjectList.jsp" />  
+   </definition>  
+  
+      <!-- Project Details Page For Approval  authority.projectIndvDetails -->
+   <definition name="authority.projectCompDetailsPage" extends="authority-definition">  
+       <put-attribute name="title" value="Project Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/projectFirmRegistrationDetails.jsp" />  
+   </definition>  
+     <!-- Project Details Page For Approval   -->
+   <definition name="authority.projectIndvDetailsPage" extends="authority-definition">  
+       <put-attribute name="title" value="Project Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/projectRegistrationIndv.jsp" />  
+   </definition> 
+  
+  
+  
+    <definition name="authority.projectExtTasklist" extends="authority-definition">  
+       <put-attribute name="title" value="Project Task List" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/extProjecttaskList.jsp" />  
+   </definition>  
+   
+     <!-- Project Details Page For Approval  authority.projectIndvDetails -->
+   <definition name="authority.projectExtCompDetails" extends="authority-definition">  
+       <put-attribute name="title" value="Project Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/projectFirmRegExt.jsp" />  
+   </definition>  
+     <!-- Project Details Page For Approval   -->
+   <definition name="authority.projectExtIndvDetails" extends="authority-definition">  
+       <put-attribute name="title" value="Project Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/projectIndvRegExt.jsp" />  
+   </definition> 
+   
+  
+     <definition name="authority.agentRenwalTasklist" extends="authority-definition">  
+       <put-attribute name="title" value="Agent Task List" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/agentRenewRegtaskList.jsp" />  
+   </definition> 
+  
+  
+   <!-- Individual Agent Apporval Page -->
+   <definition name="authority.agentReqIndvDetails" extends="authority-definition">  
+       <put-attribute name="title" value="Agent Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/agentRenewRegIndv.jsp" />  
+   </definition> 
+  
+   <!-- Company/Firm Agent Approval Page -->
+   <definition name="authority.agentReqCompDetails" extends="authority-definition">  
+       <put-attribute name="title" value="Agent Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/authority/agentRenewDetailCom.jsp" />  
+   </definition> 
+  
+  
+  
+  
+  
+    <!-- Authority User Pages End -->
+    
+    
+    
+    
+    
+    
+     <!-- Operator User Pages Start -->
+    
+      <!-- Complaint task list -->
+   
+   <definition name="operator.complaintTasklist" extends="operator-definition">  
+       <put-attribute name="title" value="Complaint Task List" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/complainttaskList.jsp" />  
+   </definition>
+     
+   <definition name="operator.approvComplaint" extends="operator-definition">  
+       <put-attribute name="title" value="Complaint Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/approveComplaint.jsp" />  
+   </definition>
+   
+   
+  
+    <!-- Dashboard Page -->
+   <definition name="operator.dashbord" extends="operator-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/operatorBody.jsp" />  
+   </definition> 
+   
+   <definition name="operator.changePassword" extends="operator-definition">  
+       <put-attribute name="title" value="Change Password" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/changePassword.jsp" />  
+   </definition> 
+   
+   
+    <!-- Project task List Page -->
+   <definition name="operator.projectTasklist" extends="operator-definition">  
+       <put-attribute name="title" value="Project TaskList" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/projecttaskList.jsp" />  
+   </definition>  
+   
+     <!-- Project Details Page For Approval  authority.projectIndvDetails -->
+   <definition name="operator.projectCompDetails" extends="operator-definition">  
+       <put-attribute name="title" value="Project Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/approveProjectFirmRegistration.jsp" />  
+   </definition>  
+     <!-- Project Details Page For Approval   -->
+   <definition name="operator.projectIndvDetails" extends="operator-definition">  
+       <put-attribute name="title" value="Project Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/approveProjectRegistration.jsp" />  
+   </definition> 
+   
+   
+   
+   
+   
+    <definition name="operator.projectExtTasklist" extends="operator-definition">  
+       <put-attribute name="title" value="Project Task List" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/extProjecttaskList.jsp" />  
+   </definition>  
+   
+     <!-- Project Details Page For Approval  authority.projectIndvDetails -->
+   <definition name="operator.projectExtCompDetails" extends="operator-definition">  
+       <put-attribute name="title" value="Project Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/projectFirmRegExt.jsp" />  
+   </definition>  
+     <!-- Project Details Page For Approval   -->
+   <definition name="operator.projectExtIndvDetails" extends="operator-definition">  
+       <put-attribute name="title" value="Project Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/projectIndvRegExt.jsp" />  
+   </definition> 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+     <!-- Agent task List Page -->
+   <definition name="operator.agentTasklist" extends="operator-definition">  
+       <put-attribute name="title" value="Agent Task List" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/agentRegtaskList.jsp" />  
+   </definition> 
+  
+  
+   <!-- Individual Agent Apporval Page -->
+   <definition name="operator.agentIndvDetails" extends="operator-definition">  
+       <put-attribute name="title" value="Agent Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/approveAgentRegistration.jsp" />  
+   </definition> 
+  
+   <!-- Company/Firm Agent Approval Page -->
+   <definition name="operator.agentCompDetails" extends="operator-definition">  
+       <put-attribute name="title" value="Agent Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/approveAgentDetailCom.jsp" />  
+   </definition> 
+  
+  
+  
+  
+  
+     <definition name="operator.agentRenwalTasklist" extends="operator-definition">  
+       <put-attribute name="title" value="Agent Task List" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/agentRenewRegtaskList.jsp" />  
+   </definition> 
+  
+  
+   <!-- Individual Agent Apporval Page -->
+   <definition name="operator.agentReqIndvDetails" extends="operator-definition">  
+       <put-attribute name="title" value="Agent Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/agentRenewRegIndv.jsp" />  
+   </definition> 
+  
+   <!-- Company/Firm Agent Approval Page -->
+   <definition name="operator.agentReqCompDetails" extends="operator-definition">  
+       <put-attribute name="title" value="Agent Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/agentRenewDetailCom.jsp" />  
+   </definition> 
+  
+  
+  
+  
+    
+  
+    <definition name="operator.allAgentlist" extends="authority-definition">  
+       <put-attribute name="title" value="Agent List" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/allAgentRegList.jsp" />  
+   </definition> 
+  
+
+   <definition name="operator.allProjectlist" extends="authority-definition">  
+       <put-attribute name="title" value="Project List" />  
+       <put-attribute name="body" value="/jsppages/transaction/operator/allProjectList.jsp" />  
+   </definition>  
+    
+    <!-- Operator User Pages End -->
+    
+    
+    
+    
+    
+    
+     <!-- Admin User Pages Start -->
+    
+      <definition name="admin.dashbord" extends="admin-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/jsppages/transaction/admin/adminBody.jsp" />  
+   </definition> 
+  
+ <definition name="admin.manageUsersList" extends="admin-definition">  
+       <put-attribute name="title" value="User List" />  
+       <put-attribute name="body" value="/jsppages/transaction/admin/userList.jsp" />  
+   </definition> 
+   
+    <definition name="admin.newUserForm" extends="admin-definition">  
+       <put-attribute name="title" value="New User Form" />  
+       <put-attribute name="body" value="/jsppages/transaction/admin/newUserForm.jsp" />  
+   </definition> 
+   
+    <definition name="admin.editUserForm" extends="admin-definition">  
+       <put-attribute name="title" value="Edit User Form" />  
+       <put-attribute name="body" value="/jsppages/transaction/admin/editUserForm.jsp" />  
+   </definition> 
+   
+   
+   
+    <definition name="admin.viewAllStateUT" extends="admin-definition">  
+       <put-attribute name="title" value="State/UT List" />  
+       <put-attribute name="body" value="/jsppages/transaction/admin/stateUtList.jsp" />  
+   </definition> 
+   
+    <definition name="admin.viewAllDistrict" extends="admin-definition">  
+       <put-attribute name="title" value="State/UT List" />  
+       <put-attribute name="body" value="/jsppages/transaction/admin/districtList.jsp" />  
+   </definition> 
+   
+    <definition name="admin.viewAllSubDistrict" extends="admin-definition">  
+       <put-attribute name="title" value="State/UT List" />  
+       <put-attribute name="body" value="/jsppages/transaction/admin/subDistrictList.jsp" />  
+   </definition> 
+   
+     <!-- Admin User Pages End -->
+    
+    
+    
+    
+</tiles-definitions>
